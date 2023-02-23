@@ -3,3 +3,8 @@ We see three critical differences between programming and software engineering: 
 r: As preocupações de um engenheiro de software são distintas das de um programador. Questões como o efeito da passagem do tempo sobre o software, escala e eficiência do programa e da organização e até tomar decisões importantes baseando-se em dados muitas vezes imprecisos. Tais pontos demonstram que engenheiros de software lidam com muito mais que o desenvolvimento de produtos.
 
 Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming  is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming.
+
+r: engenharia de software é programação envolvendo tempo, escala e trade-off;
+
+O que são requisitos: requisitos são necessidade do cliente que irão ditar como o engenheiro de software constrói o software. 
+Eles são separados em duas categorias: Requisitos funcionais, que são os requisitos que o programa TEM que ter. por exemplo, um app de mensagens tem que ser capaz de enviar mensagens para outras pessoas; Agora, os requisitos não-funcionais se referem a qualidades do software, por exemplo, o app de mensagem tem que enviar as mensagens rapidamente.
