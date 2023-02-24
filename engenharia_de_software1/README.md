@@ -11,4 +11,8 @@ Eles são separados em duas categorias: <br>
 1. Requisitos funcionais, que são os requisitos que o programa TEM que ter. por exemplo, um app de mensagens tem que ser capaz de enviar mensagens para outras pessoas<br>
 2. Requisitos não-funcionais se referem a qualidades do software, por exemplo, o app de mensagem tem que enviar as mensagens rapidamente.</p>
 
-
+<h4>Exemplos de requisitos e seus trade-offs</h4>
+<ul>
+ <li>Segurança:</li><p> Tempo para implementar, auditoria, revisão constante de ferramenteas e atualizazções / Menos problemas relacionados a vazamento de dados e coisas do gênero/</p>
+ <li>Portabilidade:</li><p> Preocupação com implementação em vários dispositivos diferentes, revisão constante / Alcance de maior n° de usuários/</p>
+ </ul>
