@@ -16,3 +16,8 @@ Eles são separados em duas categorias: <br>
  <li>Segurança:</li><p> Tempo para implementar, auditoria, revisão constante de ferramenteas e atualizazções / Menos problemas relacionados a vazamento de dados e coisas do gênero/</p>
  <li>Portabilidade:</li><p> Preocupação com implementação em vários dispositivos diferentes, revisão constante / Alcance de maior n° de usuários/</p>
  </ul>
+
+
+<div>
+ <img src="imgs/diagrama.PNG" alt="diagrama de classes" width="400px">
+</div>
