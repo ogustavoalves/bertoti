@@ -21,11 +21,3 @@ Eles são separados em duas categorias: <br>
 <div align="center">
  <img src="imgs/diagrama.png" alt="diagrama de classes" width="400px">
 </div>
-```java
-// Seu programa em Java aqui
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
-```
