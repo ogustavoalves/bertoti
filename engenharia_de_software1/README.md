@@ -17,7 +17,7 @@ Eles são separados em duas categorias: <br>
  <li>Portabilidade:</li><p> Preocupação com implementação em vários dispositivos diferentes, revisão constante / Alcance de maior n° de usuários/</p>
  </ul>
 
-
-<div>
+<h3>Diagrama de Classes</h3>
+<div align="center">
  <img src="imgs/diagrama.png" alt="diagrama de classes" width="400px">
 </div>
