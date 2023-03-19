@@ -19,5 +19,5 @@ Eles são separados em duas categorias: <br>
 
 <h3>Diagrama de Classes</h3>
 <div align="center">
- <img src="imgs/diagrama.png" alt="diagrama de classes" width="400px">
+ <img src="imgs/Diagrama1.jpg" alt="diagrama de classes" width="400px">
 </div>
