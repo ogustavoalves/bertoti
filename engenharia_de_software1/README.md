@@ -25,71 +25,145 @@ Eles são separados em duas categorias: <br>
 
 ```java
   
-  //classe mãe
-  public abstract class Funcionario {
-    protected String nome;
-    protected double salario;
-    protected double bonus;
+  //classe 1
+  import java.util.ArrayList;
 
-    public String getNome() {
-        return this.nome;
+public class Sala {
+    private String turma;
+    private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+    private Professor professor;
+    private ArrayList<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+
+    public Sala(String turma) {
+        this.turma = turma;
+
+    }
+    public void setTurma(String turma) {
+        this.turma = turma;
     }
 
-    public double getSalario() {
-        return this.salario;
-    }
-
-    public double getBonus() {
-        this.bonus = this.salario * 0.1;
-        return this.bonus;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public void setListaAlunos(Aluno aluno) {
+        alunos.add(aluno);
     }
     
-    
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    public void setDisciplinas(Disciplina disciplina) {
+        disciplinas.add(disciplina);
+    }
+
+    public void exibeListaAlunos() {
+        for (int i = 0; i < alunos.size(); i++) {
+            System.out.println(alunos.get(i).getNomeAluno());
+        }
+    }
+
+    public void exibeDisciplinas() {
+        for (int i = 0; i < disciplinas.size(); i++) {
+            System.out.println(disciplinas.get(i).getNomeDisciplina());
+        }
+    }
+
 }
+
    
-   
-   //classe filha 1
-   public class Diretor extends Funcionario {
-    
-    public double getBonus() {
-        super.bonus = super.salario;
-        return super.bonus;
+   //classe 2
+public class Professor {
+    private String nomeProfessor;
+    private String disciplinaLecionada;
+
+    public Professor(String nomeProfessor, String disciplinaLecionada) {
+        this.nomeProfessor = nomeProfessor;
+        this.disciplinaLecionada = disciplinaLecionada;
+    }
+
+    public void setNomeProfessor(String nomeProfessor) {
+        this.nomeProfessor = nomeProfessor;
+    }
+
+    public void setDisciplinaLecionada(String disciplinaLecionada) {
+        this.disciplinaLecionada = disciplinaLecionada;
+    }
+
+    public void Imprimir() {
+        System.out.println("Nome: " + nomeProfessor);
+        System.out.println("Disciplina: " + disciplinaLecionada);
     }
     
 }
 
 
-  //classe filha 2
-  public class Professor extends Funcionario{
-    private String materia;
-    private String[] salas;
 
-    public String getMateria() {
-        return materia;
+  //classe 3
+public class Disciplina {
+    private String nomeDisciplina;
+    private int cargaHoraria;
+
+    public Disciplina(String nomeDisciplina, int cargaHoraria) {
+        this.nomeDisciplina = nomeDisciplina;
+        this.cargaHoraria = cargaHoraria;
     }
 
-    public void setMateria(String materia) {
-        this.materia = materia;
+    public void setNomeDisciplina(String nomeDisciplina) {
+        this.nomeDisciplina = nomeDisciplina;
     }
 
-    public String[] getSalas() {
-        return salas;
+    public void setCargaHoraria(int cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
     }
 
-    public void setSalas(String[] salas) {
-        this.salas = salas;
+    public String getNomeDisciplina() {
+        return nomeDisciplina;
     }
-    
+
+    public void Imprimir() {
+        System.out.println("Nome da Disciplina: " + nomeDisciplina);
+        System.out.println("Carga Horária: " + cargaHoraria);
+    }
+
+}
+
+
+  //classe 4
+public class Aluno {
+    private String turma;
+    private String nomeAluno;
+    private int RA;
+
+    public Aluno(String turma, String nomeAluno, int RA) {
+        this.turma = turma;
+        this.nomeAluno = nomeAluno;
+        this.RA = RA;
+    }
+
+    public void setTurma(String turma) {
+        this.turma = turma;
+    }
+
+    public void setNomeAluno(String nomeAluno) {
+        this.nomeAluno = nomeAluno;
+    }
+
+    public void setRA(int RA) {
+        this.RA = RA;
+    }
+
+    public String getNomeAluno() {
+         return nomeAluno;
+    }
+
+    public void Imprimir() {
+        System.out.println("Turma: " +  turma);
+        System.out.println("Nome do Aluno: " +  nomeAluno);
+        System.out.println("RA: " +  RA);
+    }
     
 }
+
+
   
 
 ```
