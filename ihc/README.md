@@ -4,12 +4,10 @@
 
 <br>
 
-<p>
-  
-  ![image](/imgs/imgHeuristica.JPG)
+<div>
+  <img id="print" src="imgs/imgHeuristica.JPG" width=400px>
   <p>O Siga não exibe a grade de horário de forma clara ao aluno. Além de as matérias estarem em formato abreviado, a ordem em que aparecem não é definida pelo horário da aula e sim por ordem alfabética.</p>
-  
-</p>
+</div>
 
 ### Possível solução
 
