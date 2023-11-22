@@ -1,3 +1,14 @@
+# Primeira Heurística - Visibilidade do Status do sistema
+
+#### "O sistema deve sempre manter os usuários informados sobre o que está acontecendo, em tempo real, por meio de feedbacks instantâneos dentro de um prazo razoável, que servirão para orientar o usuário sobre o que está acontecendo na tela em que ele se encontra."
+
+<br>
+
+<div>
+  <img id="print" src="imgs/imgHeuristica1.JPG" width=400px>
+</div>
+<p>A página home do siga é confusa e pouco intuitiva.</p>
+
 # Sétima Heurística - Flexibilidade e eficiência de uso
 
 #### "É importante deixar uma experiência boa com seu sistema desde o usuário mais leigo até o mais avançado."
