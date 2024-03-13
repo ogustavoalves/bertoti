@@ -6,3 +6,9 @@
 - ### Observer
 
 - ### Composite
+
+- ### Singleton
+
+- ### Facade
+
+
