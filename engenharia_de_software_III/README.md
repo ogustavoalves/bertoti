@@ -1,6 +1,22 @@
 ## Engenharia de Software III
 ### (Diagramas UML e Códigos Referentes aos Design Patterns aprendidos na Aula)
 
+
+    
+
+<!-- <div align="center"> 
+        <p>strategy</p>
+        <img src='./imgs/strategy.PNG'> </img>
+        <p>observer</p>
+        <img src='./imgs/observer.PNG'> </img>
+        <p>singleton</p>
+        <img src='./imgs/singleton.PNG'> </img>
+        <p>composite</p>
+        <img src='./imgs/composite.PNG'> </img>
+        <p>facade</p>
+        <img src='./imgs/facade.PNG'> </img>
+</div> -->
+
 - ### Strategy
 
     <div>
@@ -288,7 +304,7 @@
 - ### Facade
 
     <div>
-        <img src=''> </img>
+        <img src='./imgs/facade.PNG'> </img>
     </div>
 
     ```java
