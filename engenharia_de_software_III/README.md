@@ -105,7 +105,7 @@
 - ### Observer
 
     <div>
-        <img src=""></img>
+        <img src='./imgs/observer.PNG'></img>
     </div>
 
     ```java 
