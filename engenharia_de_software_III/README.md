@@ -387,3 +387,14 @@
 
     ```
 
+### MVC (Strategy, Observer, Composite)
+
+<div>
+<img src="./imgs/MVC.png"></img>
+</div>
+
+```java
+
+    
+
+```
