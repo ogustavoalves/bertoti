@@ -395,6 +395,159 @@
 
 ```java
 
-    
+    public interface ControllerInterface {
+        String update(String str);
+        void notify();
+        void save();
+    }
+
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+    public interface subject {
+        void addNotification(String notification);
+        void notifyObservers();
+    }
+
+    public class Model implements Subject {
+        private List<Observer> observers;
+        private List<String> notifications;
+
+        public Model() {
+            observers = new ArrayList<>();
+            notifications = new ArrayList<>();
+        }
+
+        public void addNotification(Observer observer) {
+            observers.add(observer);
+        }
+
+        @Override
+        public void addNotification(String notification) {
+            notifications.add(notification);
+            notifyObservers();
+        }
+
+        @Override
+        public void notifyObservers() {
+            for (Observer observer : observers) {
+                observer.update(this);
+            }
+        }
+
+        public List<String> getNotifications() {
+            return notifications;
+        }
+    }
+
+
+    public interface Observer {
+        void update(Subject subject);
+    }
+
+
+    public class Controller implements ControllerInterface {
+        private View view;
+        private Subject model;
+
+        public Controller(View view, Subject model) {
+            this.view = view;
+            this.model = model;
+        }
+
+        @Override
+        public String update(String str) {
+            model.addNotification(str);
+            return str;
+        }
+
+        @Override
+        public void notify() {
+            model.notifyObservers();
+        }
+
+        @Override
+        public void save() {
+            // Implementation of save logic
+        }
+    }
+
+
+    public class ControllerTrial implements ControllerInterface {
+        private View view;
+        private Subject model;
+
+        public ControllerTrial(View view, Subject model) {
+            this.view = view;
+            this.model = model;
+        }
+
+        @Override
+        public String update(String str) {
+            model.addNotification(str);
+            return str;
+        }
+
+        @Override
+        public void notify() {
+            model.notifyObservers();
+        }
+
+        @Override
+        public void save() {
+            // Implementation of save logic
+        }
+    }
+
+
+    public class View implements Observer {
+        private String type;
+        private ControllerInterface controller;
+        private String notification;
+
+        public View(String type, ControllerInterface controller) {
+            this.type = type;
+            this.controller = controller;
+        }
+
+        public void createView() {
+            // Implementation of view creation logic
+        }
+
+        public void update(String str) {
+            this.notification = str;
+            display();
+        }
+
+        @Override
+        public void update(Subject subject) {
+            if (subject instanceof Model) {
+                Model model = (Model) subject;
+                this.notification = model.getNotifications()
+                .get(model.getNotifications().size() - 1);
+                display();
+            }
+        }
+
+        public void display() {
+            System.out.println("Notification: " + notification);
+        }
+    }
+
+
+    public class Main {
+        public static void main(String[] args) {
+            Model model = new Model();
+            ControllerInterface controller = new Controller(new View("main", null), model);
+            View view = new View("main", controller);
+            model.addNotification(view);
+
+            view.createView();
+            controller.update("First notification");
+            controller.update("Second notification");
+        }
+    }
+
 
 ```
